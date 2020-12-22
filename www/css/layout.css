@@ -1,0 +1,330 @@
+/*navigation PC*/
+.nav{
+    background:#fff;
+    position: relative;
+    z-index:9
+}
+.nav:after{
+    display: block;
+    clear:both;
+    content:''
+    
+}
+.nav .logo_img{
+    line-height: 65px;
+    width: 270px;
+    text-align: center;
+}
+
+ .logo{
+    background: #fff;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+.nav .logo a.logo_img{
+    width:100px;
+    display:block;
+    height:50px;
+}
+.nav_bar{
+    overflow: hidden;
+    margin-bottom:0;
+    padding-left: 0;
+}
+.nav_bar li{
+    float:left;
+    list-style: none; 
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.nav_bar li a{
+    color: #646464;
+    width: 100%;
+    padding: 22px 40px;
+    display: inline-block;
+    font-size: s16x;
+    text-align: center;
+    font-weight: bold;
+}
+.nav_bar li a:hover{
+    text-decoration: none;
+}
+.nav_bar li.on a{
+    font-weight: bold;
+    color:#1F4194;
+
+}
+/*
+.nav_bar li.on:after{
+    display: block;
+    clear:both;
+    content:'';
+    position: absolute;
+    bottom:0;
+    right:50%;
+    margin-right:-40%;
+    width: 80%;
+    height:2px;
+    background-color: #1F4194;
+
+}*/
+.nav_bar li a:before{
+    display:inline-block;
+    clear:both;
+    content:'';
+    margin: -1px 7px -1px 0;
+}
+.nav_bar li:first-child a:before{
+    width:19px;
+    height:17px;
+    background:url(../img/top_menu01_ico_on.png) no-repeat;
+    background-size: cover;
+}
+.nav_bar li:nth-child(2) a:before{
+    width:16px;
+    height:16px;
+    background:url(../img/top_menu04_ico.png) no-repeat;    
+    background-size: cover;
+}
+.nav_bar li:nth-child(3) a:before{
+    width:13px;
+    height:18px;
+    background:url(../img/top_menu02_ico.png) no-repeat;
+    background-size: cover;
+}
+.nav_bar li:nth-child(4) a:before{
+    width:14px;
+    height:16px;
+    background:url(../img/top_menu03_ico.png) no-repeat;
+    background-size: cover;
+}
+.nav .menu_profile{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    right: 100px;
+    top: 20px;
+}
+.nav .menu_profile:before {
+    content: '';
+    clear: both;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(../img/ico_user.png) no-repeat;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+.nav_mb{
+    display:none
+}
+.nav_mb #myLinks{
+    display: none
+}
+/*frame layout*/
+.con_wrap{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    background: #f9f9f9;
+}
+
+.leftframe{
+    width: 250px;
+    background: #182441;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.leftframe .tit{
+    background:#49577b;
+    color:#fff;
+}
+.leftframe .tit p{
+    margin-bottom:0;
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size:17px;
+    position: relative;
+}
+.leftframe .tit p:before{
+    display:inline-block;
+    clear:both;
+    content:'';
+    width:19px;
+    height:17px;
+    background:url(../img/menu01_ico.png) no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-top: -7px;
+    margin-right:6px ;
+}
+.leftframe .tit p:after{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    clear:both;
+    content:'';
+    background:url(../img/ico_dropdown.png) no-repeat;
+    vertical-align: middle;
+    position: absolute;
+    right: 30px;
+    top:26px;
+}
+.leftframe .sub_nav {
+    margin-top:10px
+}
+.leftframe .sub_nav li{
+    line-height: 50px;
+    text-indent: 5px;
+    position: relative;
+    color: #9E9E9E;
+}
+.leftframe .sub_nav li.on {
+    color: #fff;
+    font-weight: bold;
+    text-indent: -5px;
+}
+.leftframe .sub_nav li.on:before {
+    width: 5px;
+    height: 9px;
+    display: inline-block;
+    clear: both;
+    content: '';
+    background: url(../img/ico_arrow.png) no-repeat;
+    margin-right: 5px;}
+.mainframe{
+    background:#F9F9F9;
+    margin-left:250px;
+    min-height: 100%;
+   
+}
+.container_wrap{
+    padding: 40px 50px;
+}
+
+@media (min-width:1600px){
+    .nav_bar li{margin:0 20px}
+}
+@media (max-width:1200px){
+    .con_wrap{
+        height:auto
+    }
+    .nav .logo_img{
+        width:100%;
+        text-align: center;
+    }
+    .nav_bar{
+        width:100%;
+    }
+    .nav_bar li{
+        margin:0;
+        width:25%
+    }
+    .nav_bar li a{
+        padding:22px 0 
+    }
+
+}
+@media (max-width:1024px){
+    .logo{
+        display:none
+    }
+    .nav{
+        display:none
+    }
+    .nav_mb{
+        display:block;
+        z-index:1000;
+        background:#fff;
+        width:100%;
+        position: relative;
+    }
+    
+    .nav_mb a.toggle{
+        width: 22px;
+        height: 22px;
+        background: url(../img/btn_Mmenu.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 24px;
+        left: 20px;
+        z-index: 1;
+    }
+    .nav_mb .sidebar-bg{
+        top:67px
+    }
+    .nav_mb a.nav_mb_tit{
+        text-align:center;
+        padding:20px 0;
+        display:block;
+        margin-bottom:0;
+        font-size:18px;
+        font-weight: bold;
+        color:#1F4194;
+        
+    }
+    .nav_mb a.nav_mb_tit:after{
+        display: inline-block;
+        clear:both;
+        content:'';
+        background:url(../img/nav_mb_top_more.png) no-repeat;
+        width: 13px;
+        height: 7px;
+        vertical-align: middle;
+        margin-left: 7px;
+        margin-top: -5px;
+    }
+    
+    #myLinks{
+     
+    width: 100%;
+    background-color: #fff;
+    background-size: contain;
+    overflow-y: auto;
+    z-index: 1000;
+    position: absolute;
+    }
+    #myLinks.active{
+        width: 100%;
+        transition: all 0.5s ease-out 0s;
+        -webkit-transition: all 0.5s ease-out 0s;
+        -moz-transition: all 0.5s ease-out 0s;
+        -ms-transition: all 0.5s ease-out 0s;
+        -o-transition: all 0.5s ease-out 0s;
+    }
+    #myLinks a{
+        display:block;
+        color:#646464;
+        text-align: center;
+        font-size:18px;
+        border-bottom: 1px solid #DFDFDF;
+        padding:10px 0;
+    }
+    #myLinks a:last-child{
+        border:none
+    }
+    .leftframe{
+        display:none
+    }
+    .mainframe{
+        width:100%;
+        margin-left:0;
+        /*height:auto;*/
+        overflow-y: hidden;
+    }
+    .container_wrap{
+        padding:20px
+    }
+}

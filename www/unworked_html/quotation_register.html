@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+</head>
+<body>
+  <div class="nav shadow-sm">
+    <a href="./dashboard.html" class="logo_img"><img src="./img/logotest.png"></a>
+<ul class="nav_bar">
+    <li class="on"><a href="#" class="menu01">견적주문</a></li>
+    <li><a href="./booking_register.html" class="menu02">BOOKING</a></li>
+    <li><a href="./bl.html" class="menu03">물류진행</a></li>
+    <li><a href="./charge.html" class="menu04">고객정산</a></li>
+    <li><a href="#" class="menu05">이용안내</a></li>
+</ul>
+<p class="menu_profile">홍길동</p>
+  <div class="total_menu">
+      <div class="sub_menu">
+          <ul>
+              <li><a>견적요청</a></li>
+              <li><a>견적진행</a></li>
+              <li><a>견적확정</a></li>
+          </ul>
+      </div>
+      <div class="sub_menu">
+          <ul>
+              <li><a>BOOKING 요청</a></li>
+              <li><a>BOOKING 진행</a></li>
+              <li><a>BOOKING 확정</a></li>
+          </ul>
+      </div>
+      <div class="sub_menu">
+          <ul>
+              <li><a>B/L Confirm</a></li>
+              <li><a>B/L 진행 조회</a></li>
+          </ul>
+      </div>
+      <div class="sub_menu">
+          <ul>
+              <li><a>청구/수금 내역</a></li>
+          </ul>
+      </div>
+  </div>
+       
+        <div class="mega_menu">
+            <a class="mg_btn"><img src="./img/btn_Mmenu.png"></a>
+        </div>
+    </div>
+    <div class="con_wrap">
+      <div class="leftframe">
+          
+        <div class="tit">
+          <p>견적주문</p>
+    </div>
+    <ul class="sub_nav">
+          <li class="on"><a href="./quotation_register.html">견적요청</a></li>
+          <li><a href="./quotation.html">견적진행</a></li>
+          <li><a href="./quotation.html">견적확정</a></li>
+    </ul>
+      </div>
+      <div class="mainframe">
+      
+        <div class="nav_mb shadow-sm" id="test">
+            <a id="menu-toggle" href="#" class="toggle"></a>
+            <a class="nav_mb_tit" href="javascript:void(0);" onclick="myFunction()">견적주문</a>
+            <div id="myLinks">
+                <a href="#">BOOKING</a>
+                <a href="#">물류진행</a>
+                <a href="#">고객정산</a>
+            </div>
+            <div class="sidebar-bg"></div>
+        </div>        
+              <div class="container_wrap">
+                  <div class="register_body">
+              <ul class="breadCrumb">
+                <li class="bc-item">견적주문</li>
+                <li class="bc-item">견적요청</li>
+              </ul>
+              <div class="register_box">
+              <form class="form-row">
+
+                <div class="col-md-6">
+                  <p class="label">운송수단</p>
+                <div class="form-row mt-2">
+                  
+                  <div class="shipping-select col-md-5">
+                    <input type="radio" id="trans_sea" name="select" value="1" checked>
+                    <label for="trans_sea" class="shipping-item">해상운송</label>
+                  </div>
+                  <div class="shipping-select col-md-5">
+                    <input type="radio" id="trans_air" name="select" value="2">
+                    <label for="trans_air" class="shipping-item">항공운송</label>
+                  </div>
+                  
+                  
+                  
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">출발지</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="출발지 항구를 입력하세요" required>
+                  </div>                                          
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault02">도착지</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="도착지 항구를 입력하세요" required>
+                  </div>
+
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationDefaultUsername">요청사항</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationDefault03">Container</label>
+                    <div class="tbl table_view">
+                      <table class="table tblin">
+                        <thead class="thead-grey">
+                          <tr>
+                            <th scope="col">타입</th>
+                            <th scope="col">수량</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">&nbsp;</th>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">&nbsp;</th>
+                            <td>&nbsp;</td>
+                          </tr>
+                          </tbody>
+                      </table>                
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p class="label">운송타입</p>
+                  <div class="form-row mt-2">                   
+                    <div class="shipping-select col-md-5">
+                      <input type="radio" id="trans_fcl" name="type" value="1" checked>
+                      <label for="trans_fcl" class="shipping-item">FCL</label>
+                    </div>
+                    <div class="shipping-select col-md-5">
+                      <input type="radio" id="trans_lcl" name="type" value="2">
+                      <label for="trans_lcl" class="shipping-item">LCL</label>
+                    </div>                   
+                  </div>
+
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault01">출발 예정일</label>
+                    <input type="date" class="form-control" id="validationDefault01" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationDefault02">도착 예정일</label>
+                    <input type="date" class="form-control" id="validationDefault02" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationDefaultUsername">품목</label>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                    
+                  </div>
+                </div>
+                <div class="form-row">                  
+                <div class="col-md-4 mb-3">
+                   <label for="validationDefault01">Package 수량/단위</label>
+                   <div class="form-check-inline">
+                  <input type="text" class="form-control col-md-6" id="validationDefault01" placeholder="포장 수량" required>
+                  <select class="custom-select mr-sm-2 ml-1 col-md-6" id="inlineFormCustomSelect">
+                    <option selected>Pallets/Boxes</option>
+                    <option value="FCL">Pallets</option>
+                    <option value="LCL">Boxes</option>
+                  </select>
+                </div>                
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefault02">Weight</label>
+                  
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Weight" required>
+                  
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefault02">Measurement</label>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Measurement" required>
+                </div>
+              </div>
+              </div>
+              
+              </form>
+              
+            </div>
+            <div class="btn_wrap mt-4">
+              <a class="send">요청</a>
+              <a class="cancel">취소</a>
+            </div>
+            </div>
+          </div>
+      </div>
+        
+    </div>
+    <div id="sidebar-wrapper">
+        <div class="sidebar_top">
+            <a id="menu-close" href="#" class="close_toggle"></a>
+            <span class="sub_logo"><img src="./img/logotest.png"></span>
+            <ul class="menu-top">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+            <p class="menu-profile">홍길동</p>
+        </div>
+     
+
+        <div class="leftframe_mb">
+            <div class="tit sidebar-nav">
+                <p>견적/주문 서비스</p>
+            </div>
+            <ul class="sub_nav">
+                <li class="on"><a>스케줄 조회</a></li>
+                <li><a>견적 요청/승인/조회</a></li>
+                <li><a>BKG 요청/확정 조회</a></li>
+            </ul>
+        </div>
+      
+    </div>
+    <div class="sidebar-bg"></div>
+    <script>
+        $('.mg_btn').click(function(){
+            $('.total_menu').slideDown();
+        });
+        $('.total_menu').hover(function(){
+            $(this).css('display','block');
+        }, function(){
+            $(this).slideUp();
+        });
+        //다중선택
+        $(function() {
+    $('#toggle-event').change(function() {
+      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+    })
+  })
+  //사이드메뉴
+  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0",display:"none"});
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0.7",display:"block"});    
+  });
+
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#myLinks").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0",display:"none"});
+  });
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#test").toggleClass("active");
+    
+  });
+  /*
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#myLinks").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0.7",display:"block"});    
+  });}
+*/
+  
+ //모바일 타이틀 하위메뉴
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    
+     
+  }
+
+}
+
+    </script>
+    <script>
+     $(function () {
+        $('#datetimepicker7').datetimepicker();
+        $('#datetimepicker8').datetimepicker({
+            useCurrent: false
+        });
+        $("#datetimepicker7").on("change.datetimepicker", function (e) {
+            $('#datetimepicker8').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker8").on("change.datetimepicker", function (e) {
+            $('#datetimepicker7').datetimepicker('maxDate', e.date);
+        });
+    });
+</script>
+</body>
+</html>

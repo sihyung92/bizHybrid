@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+</head>
+<body>
+  <div class="nav shadow-sm">
+          <a href="./dashboard.html" class="logo_img"><img src="./img/logotest.png"></a>
+      <ul class="nav_bar">
+          <li class="on"><a href="#" class="menu01">견적/주문 서비스</a></li>
+          <li><a href="#" class="menu02">물류진행/추적 서비스</a></li>
+          <li><a href="#" class="menu03">정산 서비스</a></li>
+          <li><a href="#" class="menu04">CFS 관리</a></li>
+      </ul>
+        <div class="total_menu">
+            <div class="sub_menu">
+                <ul>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                </ul>
+            </div>
+            <div class="sub_menu">
+                <ul>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                </ul>
+            </div>
+            <div class="sub_menu">
+                <ul>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                </ul>
+            </div>
+            <div class="sub_menu">
+                <ul>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                    <li><a>스케줄 조회</a></li>
+                </ul>
+            </div>
+        </div>
+       
+        <div class="mega_menu">
+            <a class="mg_btn"><img src="./img/btn_Mmenu.png"></a>
+        </div>
+    </div>
+    <div class="con_wrap">
+      <div class="leftframe">
+          
+        <div class="tit">
+              <p>견적/주문 서비스</p>
+        </div>
+        <ul class="sub_nav">
+              <li class="on"><a>스케줄 조회</a></li>
+              <li><a>견적 요청/승인/조회</a></li>
+              <li><a>BKG 요청/확정 조회</a></li>
+        </ul>
+      </div>
+      <div class="mainframe">
+      
+        <div class="nav_mb shadow-sm" id="test">
+            <a id="menu-toggle" href="#" class="toggle"></a>
+            <a class="nav_mb_tit" href="javascript:void(0);" onclick="myFunction()">견적/주문 서비스</a>
+            <div id="myLinks">
+                <a href="#">물류진행/추적 서비스</a>
+                <a href="#">정산 서비스</a>
+                <a href="#">CFS 관리</a>
+            </div>
+            <div class="sidebar-bg"></div>
+        </div>        
+              <div class="container_wrap">
+                  <div class="con_body">
+              <h1>스케줄 조회</h1>
+              <div class="search_box container-fluid shadow-sm">                      
+                  <form class="column">
+                        <div class="inputGr">
+                          <label for="inputArea" class="col-form-label">지역</label>
+                          <div class="selectDiv">
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="inputGr">
+                        <label for="inputPort" class="col-form-label">Port</label>
+                          <input type="text" class="form-control" id="inputPort" placeholder="">
+                      </div>
+                      <div class="inputGr"> 
+                        <label for="inputDate" class="col-form-label">요청일자</label>  
+                        <div class="dateDiv">
+                          <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7"/>
+                              <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                          </div>
+                          <div class="input-group date ml-2" id="datetimepicker8" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker8"/>
+                              <div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                        <div class="inputGr">
+                          <label for="inputLine" class="col-form-label">Line</label>
+                            <input type="text" class="form-control" id="inputLine" placeholder="">
+                        </div>
+                        <div class="inputGr">    
+                          <label for="inputVessel" class="col-form-label">Vessel</label>
+                            <input type="text" class="form-control" id="inputVessel" placeholder="">
+                        </div>
+                        <div class="inputGr">
+                          <label for="inputDate" class="col-form-label">T/S</label>  
+                          <div class="btn-group-toggle tsSelect" data-toggle="buttons">
+                              <label class="btn btn-secondary active">
+                                <input type="checkbox" checked="checked"> 직항
+                              </label>
+                              <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 1회 기항
+                                </label>
+                                <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 2회 이상
+                                </label>
+                          
+                            </div>
+                        </div>
+                        <div class="inputGr">
+                          <label for="inputDepart" class="col-form-label">출항일</label>
+                          <div class="btn-group-toggle dateSelect" data-toggle="buttons">
+                              <label class="btn btn-secondary active">
+                                <input type="checkbox" checked="checked"> 일
+                              </label>
+                              <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 월
+                                </label>
+                                <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 화
+                                </label>
+                                <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 수
+                                </label>
+                                <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 목
+                                </label>
+                                <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 금
+                                </label>
+                                <label class="btn btn-secondary active">
+                                  <input type="checkbox"> 토
+                                </label>
+                            </div>
+                          </div>
+                    </form>
+                    <a class="btn searchB">SEARCH</a>
+              </div>
+              <div class="tbl mt-5">
+                  <p class="tbl_guide">좌우로 이동하여 내용(표)을 보실 수 있습니다.</p>
+              <div class="tbl_wrap">
+              <table class="table tbl_scroll">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Line</th>
+                      <th scope="col">T.Time</th>
+                      <th scope="col">Loading</th>
+                      <th scope="col">Delivery</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Doc.Closing</th>
+                      <th scope="col">Cargo Closing</th>
+                      <th scope="col">Contact</th>
+                      <th scope="col">CFS</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td>22Days</td>
+                      <td>KRPUS</td>
+                      <td>CNDAL</td>
+                      <td>2020-07-04~<br>2020-07-06</vr></td>
+                      <td>2020-06-30</td>
+                      <td>2020-07-01</td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_address.png">
+                        <div class="contact_tooltip">
+                          <p>골드웨이 수출1팀</p>
+                          <ul>
+                            <li>허명명 대리 : 02-7722-5166</li>
+                            <li>윤혜빈 사원 : 02-7722-5188</li>
+                          </ul>
+                          <p>서류접수</p>
+                          <ul>
+                            <li>Email : out@goldway.com</li>
+                            <li>FAX : 02-7722-9999</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_cfs.png">
+                          <div class="contact_tooltip">
+                            <p>골드웨이 수출1팀</p>
+                            <ul>
+                              <li>허명명 대리 : 02-7722-5166</li>
+                              <li>윤혜빈 사원 : 02-7722-5188</li>
+                            </ul>
+                            <p>서류접수</p>
+                            <ul>
+                              <li>Email : out@goldway.com</li>
+                              <li>FAX : 02-7722-9999</li>
+                            </ul>
+                          </div>
+                        </a>
+                      </td>
+                      <td>
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td>22Days</td>
+                      <td>KRPUS</td>
+                      <td>CNDAL</td>
+                      <td>2020-07-04~<br>2020-07-06</vr></td>
+                      <td>2020-06-30</td>
+                      <td>2020-07-01</td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_address.png">
+                        <div class="contact_tooltip">
+                          <p>골드웨이 수출1팀</p>
+                          <ul>
+                            <li>허명명 대리 : 02-7722-5166</li>
+                            <li>윤혜빈 사원 : 02-7722-5188</li>
+                          </ul>
+                          <p>서류접수</p>
+                          <ul>
+                            <li>Email : out@goldway.com</li>
+                            <li>FAX : 02-7722-9999</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_cfs.png">
+                          <div class="contact_tooltip">
+                            <p>골드웨이 수출1팀</p>
+                            <ul>
+                              <li>허명명 대리 : 02-7722-5166</li>
+                              <li>윤혜빈 사원 : 02-7722-5188</li>
+                            </ul>
+                            <p>서류접수</p>
+                            <ul>
+                              <li>Email : out@goldway.com</li>
+                              <li>FAX : 02-7722-9999</li>
+                            </ul>
+                          </div>
+                        </a>
+                      </td>
+                      <td>
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td>22Days</td>
+                      <td>KRPUS</td>
+                      <td>CNDAL</td>
+                      <td>2020-07-04~<br>2020-07-06</vr></td>
+                      <td>2020-06-30</td>
+                      <td>2020-07-01</td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_address.png">
+                        <div class="contact_tooltip">
+                          <p>골드웨이 수출1팀</p>
+                          <ul>
+                            <li>허명명 대리 : 02-7722-5166</li>
+                            <li>윤혜빈 사원 : 02-7722-5188</li>
+                          </ul>
+                          <p>서류접수</p>
+                          <ul>
+                            <li>Email : out@goldway.com</li>
+                            <li>FAX : 02-7722-9999</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_cfs.png">
+                          <div class="contact_tooltip">
+                            <p>골드웨이 수출1팀</p>
+                            <ul>
+                              <li>허명명 대리 : 02-7722-5166</li>
+                              <li>윤혜빈 사원 : 02-7722-5188</li>
+                            </ul>
+                            <p>서류접수</p>
+                            <ul>
+                              <li>Email : out@goldway.com</li>
+                              <li>FAX : 02-7722-9999</li>
+                            </ul>
+                          </div>
+                        </a>
+                      </td>
+                      <td>
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td>22Days</td>
+                      <td>KRPUS</td>
+                      <td>CNDAL</td>
+                      <td>2020-07-04~<br>2020-07-06</vr></td>
+                      <td>2020-06-30</td>
+                      <td>2020-07-01</td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_address.png">
+                        <div class="contact_tooltip">
+                          <p>골드웨이 수출1팀</p>
+                          <ul>
+                            <li>허명명 대리 : 02-7722-5166</li>
+                            <li>윤혜빈 사원 : 02-7722-5188</li>
+                          </ul>
+                          <p>서류접수</p>
+                          <ul>
+                            <li>Email : out@goldway.com</li>
+                            <li>FAX : 02-7722-9999</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_cfs.png">
+                          <div class="contact_tooltip">
+                            <p>골드웨이 수출1팀</p>
+                            <ul>
+                              <li>허명명 대리 : 02-7722-5166</li>
+                              <li>윤혜빈 사원 : 02-7722-5188</li>
+                            </ul>
+                            <p>서류접수</p>
+                            <ul>
+                              <li>Email : out@goldway.com</li>
+                              <li>FAX : 02-7722-9999</li>
+                            </ul>
+                          </div>
+                        </a>
+                      </td>
+                      <td>
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td>22Days</td>
+                      <td>KRPUS</td>
+                      <td>CNDAL</td>
+                      <td>2020-07-04~<br>2020-07-06</vr></td>
+                      <td>2020-06-30</td>
+                      <td>2020-07-01</td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_address.png">
+                        <div class="contact_tooltip">
+                          <p>골드웨이 수출1팀</p>
+                          <ul>
+                            <li>허명명 대리 : 02-7722-5166</li>
+                            <li>윤혜빈 사원 : 02-7722-5188</li>
+                          </ul>
+                          <p>서류접수</p>
+                          <ul>
+                            <li>Email : out@goldway.com</li>
+                            <li>FAX : 02-7722-9999</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_cfs.png">
+                          <div class="contact_tooltip">
+                            <p>골드웨이 수출1팀</p>
+                            <ul>
+                              <li>허명명 대리 : 02-7722-5166</li>
+                              <li>윤혜빈 사원 : 02-7722-5188</li>
+                            </ul>
+                            <p>서류접수</p>
+                            <ul>
+                              <li>Email : out@goldway.com</li>
+                              <li>FAX : 02-7722-9999</li>
+                            </ul>
+                          </div>
+                        </a>
+                      </td>
+                      <td>
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td>22Days</td>
+                      <td>KRPUS</td>
+                      <td>CNDAL</td>
+                      <td>2020-07-04~<br>2020-07-06</vr></td>
+                      <td>2020-06-30</td>
+                      <td>2020-07-01</td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_address.png">
+                        <div class="contact_tooltip">
+                          <p>골드웨이 수출1팀</p>
+                          <ul>
+                            <li>허명명 대리 : 02-7722-5166</li>
+                            <li>윤혜빈 사원 : 02-7722-5188</li>
+                          </ul>
+                          <p>서류접수</p>
+                          <ul>
+                            <li>Email : out@goldway.com</li>
+                            <li>FAX : 02-7722-9999</li>
+                          </ul>
+                        </div>
+                      </a>
+                    </td>
+                      <td>
+                        <a class="contact"><img src="./img/ico_cfs.png">
+                          <div class="contact_tooltip">
+                            <p>골드웨이 수출1팀</p>
+                            <ul>
+                              <li>허명명 대리 : 02-7722-5166</li>
+                              <li>윤혜빈 사원 : 02-7722-5188</li>
+                            </ul>
+                            <p>서류접수</p>
+                            <ul>
+                              <li>Email : out@goldway.com</li>
+                              <li>FAX : 02-7722-9999</li>
+                            </ul>
+                          </div>
+                        </a>
+                      </td>
+                      <td>
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                </div>
+                <div class="tbl">
+              <table class="table responsive_table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Line</th>
+                      <th scope="col">T.Time</th>
+                      <th scope="col">Loading</th>
+                      <th scope="col">Delivery</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Doc.Closing</th>
+                      <th scope="col">Cargo Closing</th>
+                      <th scope="col">Contact</th>
+                      <th scope="col">CFS</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td><span class="mb_th">T.Time</span>22Days</td>
+                      <td><span class="mb_th">Loading</span>KRPUS</td>
+                      <td><span class="mb_th">Delivery</span>CNDAL</td>
+                      <td><span class="mb_th">Date</span>2020-07-04~<br>2020-07-06</vr></td>
+                      <td><span class="mb_th">Doc Closing</span>2020-06-30</td>
+                      <td><span class="mb_th">Cargo Closing</span>2020-07-01</td>
+                      <td class="contact_mb con"><span class="mb_th">Contact</span><a class="contact"><img src="./img/ico_address.png"></td>
+                      <td class="contact_mb cfs"><span class="mb_th">CFS</span><a class="contact"><img src="./img/ico_cfs.png"></td>
+                      <td class="mb_btn">
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td><span class="mb_th">T.Time</span>22Days</td>
+                      <td><span class="mb_th">Loading</span>KRPUS</td>
+                      <td><span class="mb_th">Delivery</span>CNDAL</td>
+                      <td><span class="mb_th">Date</span>2020-07-04~<br>2020-07-06</vr></td>
+                      <td><span class="mb_th">Doc Closing</span>2020-06-30</td>
+                      <td><span class="mb_th">Cargo Closing</span>2020-07-01</td>
+                      <td class="contact_mb con"><span class="mb_th">Contact</span><a class="contact"><img src="./img/ico_address.png"></td>
+                      <td class="contact_mb cfs"><span class="mb_th">CFS</span><a class="contact"><img src="./img/ico_cfs.png"></td>
+                      <td class="mb_btn">
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">KMTC PACIFIC</th>
+                      <td><span class="mb_th">T.Time</span>22Days</td>
+                      <td><span class="mb_th">Loading</span>KRPUS</td>
+                      <td><span class="mb_th">Delivery</span>CNDAL</td>
+                      <td><span class="mb_th">Date</span>2020-07-04~<br>2020-07-06</vr></td>
+                      <td><span class="mb_th">Doc Closing</span>2020-06-30</td>
+                      <td><span class="mb_th">Cargo Closing</span>2020-07-01</td>
+                      <td class="contact_mb con"><span class="mb_th">Contact</span><a class="contact"><img src="./img/ico_address.png"></td>
+                      <td class="contact_mb cfs"><span class="mb_th">CFS</span><a class="contact"><img src="./img/ico_cfs.png"></td>
+                      <td class="mb_btn">
+                          <a class="quo">Quotation</a>
+                          <a class="bk">Booking</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+      </div>
+        
+    </div>
+    <div id="sidebar-wrapper">
+        <div class="sidebar_top">
+            <a id="menu-close" href="#" class="close_toggle"></a>
+            <span class="sub_logo"><img src="./img/logotest.png"></span>
+            <ul class="menu-top">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+            <p class="menu-profile">홍길동</p>
+        </div>
+     
+
+        <div class="leftframe_mb">
+            <div class="tit sidebar-nav">
+                <p>견적/주문 서비스</p>
+            </div>
+            <ul class="sub_nav">
+                <li class="on"><a>스케줄 조회</a></li>
+                <li><a>견적 요청/승인/조회</a></li>
+                <li><a>BKG 요청/확정 조회</a></li>
+            </ul>
+        </div>
+      
+    </div>
+    <div class="sidebar-bg"></div>
+    <script>
+        $('.mg_btn').click(function(){
+            $('.total_menu').slideDown();
+        });
+        $('.total_menu').hover(function(){
+            $(this).css('display','block');
+        }, function(){
+            $(this).slideUp();
+        });
+        //다중선택
+        $(function() {
+    $('#toggle-event').change(function() {
+      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+    })
+  })
+  //사이드메뉴
+  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0",display:"none"});
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0.7",display:"block"});    
+  });
+
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#myLinks").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0",display:"none"});
+  });
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#test").toggleClass("active");
+    
+  });
+  /*
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#myLinks").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0.7",display:"block"});    
+  });}
+*/
+  
+ //모바일 타이틀 하위메뉴
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    
+     
+  }
+
+}
+
+    </script>
+    <script>
+     $(function () {
+        $('#datetimepicker7').datetimepicker();
+        $('#datetimepicker8').datetimepicker({
+            useCurrent: false
+        });
+        $("#datetimepicker7").on("change.datetimepicker", function (e) {
+            $('#datetimepicker8').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker8").on("change.datetimepicker", function (e) {
+            $('#datetimepicker7').datetimepicker('maxDate', e.date);
+        });
+    });
+</script>
+</body>
+</html>

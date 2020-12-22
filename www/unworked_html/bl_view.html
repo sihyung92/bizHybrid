@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+</head>
+<body>
+  <div class="nav shadow-sm">
+          <a href="./dashboard.html" class="logo_img"><img src="./img/logotest.png"></a>
+          <ul class="nav_bar">
+            <li><a href="./quotation_register.html" class="menu01">견적주문</a></li>
+            <li><a href="./booking_register.html" class="menu02">BOOKING</a></li>
+            <li class="on"><a href="./bl.html" class="menu03">물류진행</a></li>
+            <li><a href="./charge.html" class="menu04">고객정산</a></li>
+            <li><a href="#" class="menu05">이용안내</a></li>
+        </ul>
+        <p class="menu_profile">홍길동</p>
+        <div class="total_menu">
+          <div class="sub_menu">
+              <ul>
+                  <li><a>견적요청</a></li>
+                  <li><a>견적진행</a></li>
+                  <li><a>견적확정</a></li>
+              </ul>
+          </div>
+          <div class="sub_menu">
+              <ul>
+                  <li><a>BOOKING 요청</a></li>
+                  <li><a>BOOKING 진행</a></li>
+                  <li><a>BOOKING 확정</a></li>
+              </ul>
+          </div>
+          <div class="sub_menu">
+              <ul>
+                  <li><a>B/L Confirm</a></li>
+                  <li><a>B/L 진행 조회</a></li>
+              </ul>
+          </div>
+          <div class="sub_menu">
+              <ul>
+                  <li><a>청구/수금 내역</a></li>
+              </ul>
+          </div>
+      </div>
+       
+        <div class="mega_menu">
+            <a class="mg_btn"><img src="./img/btn_Mmenu.png"></a>
+        </div>
+    </div>
+    <div class="con_wrap">
+      <div class="leftframe">
+          
+        <div class="tit">
+              <p>물류진행</p>
+        </div>
+        <ul class="sub_nav">
+          <li class="on"><a>B/L Confirm</a></li>
+          <li><a href="./bl.html">B/L 진행조회</a></li>
+    </ul>
+      </div>
+      <div class="mainframe">
+      
+        <div class="nav_mb shadow-sm" id="test">
+            <a id="menu-toggle" href="#" class="toggle"></a>
+            <a class="nav_mb_tit" href="javascript:void(0);" onclick="myFunction()">견적/주문 서비스</a>
+            <div id="myLinks">
+                <a href="#">물류진행/추적 서비스</a>
+                <a href="#">정산 서비스</a>
+                <a href="#">CFS 관리</a>
+            </div>
+            <div class="sidebar-bg"></div>
+        </div>        
+              <div class="container_wrap">
+                  <div class="con_body">
+              <ul class="breadCrumb">
+                <li class="bc-item">물류진행</li>
+                <li class="bc-item">B/L Confirm</li>
+                <li class="bc-item">Check B/L 정보</li>
+              </ul>
+              <div class="bl_tit">
+              <h2><span class="list_tit">B/L No.</span>KYN000000003</h2>
+              <ul class="quo_list">
+                <li>수출</li>
+                <li>해상운송</li>
+              </ul>
+            </div>
+                <div class="detail_view_re mt-1">
+                  
+                  <div class="list_view row">
+                    <div class="tbl quo_list_detail_re col-md-6">
+                      <ul>
+                        <li><span class="list_tit">Consignee</span><span class="list_val">XYZ Corp</span></li>
+                        <li class="mt-1"><span class="list_tit">Actual Customer</span><span class="list_val">Actual Customer Corp</span></li>
+                        
+                      </ul>
+                      <div class="table-responsive-sm">
+                      <table class="table tblin mt-4">
+                        <thead class="thead-grey">
+                          <tr>
+                            <th scope="col">Report Name</th>
+                            <th scope="col">실행일자</th>
+                            <th scope="col">담당자</th>
+                            <th scope="col">Report</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Check B/L</th>
+                            <td>2020-10-04</td>
+                            <td>확인자</td>
+                            <td><a class="ico_quodocu" href="#"></a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Invoice</th>
+                            <td>2020-10-04</td>
+                            <td>김청구</td>
+                            <td><a class="ico_quodocu" href="#"></a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Packing List</th>
+                            <td>2020-10-24</td>
+                            <td>이발행</td>
+                            <td><a class="ico_quodocu" href="#"></a></td>
+                          </tr>
+                          
+                          </tbody>
+                      </table>
+                    </div>                
+                    </div>
+                    <div class="quo_list_detail_re col-md-6">
+                      <ul>
+                      <li><span class="list_tit">Line</span><span class="list_val">SINOKOR LINE</span></li>
+                      <li class="mt-1"><span class="list_tit">Vessel/Voyage</span><span class="list_val">NORTHERN VALENCE / 205E</span></li>
+                      <li class="mt-1"><span class="list_tit">POL</span><span class="list_val">KRPUS</span></li>
+                      <li class="mt-1"><span class="list_tit">ETD</span><span class="list_val">2020-09-17</span></li>
+                      <li class="mt-1"><span class="list_tit">POD</span><span class="list_val">DAKAR</span></li>
+                      <li class="mt-1"><span class="list_tit">ETA</span><span class="list_val">2020-09-17</span></li>
+                      <li class="mt-1"><span class="list_tit">ITEM</span><span class="list_val">FISHING CHEMI FISHING REEL REEL CASE</span></li>
+                    </ul>
+                    </div>
+                  </div>    
+                </div>
+                
+                <div class="form-row">
+                  <div class="col-md-5">
+                  <h2 class="mt-4">B/L Check 이력</h2>
+                <div class="detail_view_re">
+                  <div class="table-responsive-sm">
+                  <table class="table tblin mt-2">
+                    <thead class="thead-grey">
+                      <tr>
+                        <th scope="col">요청일자</th>
+                        <th scope="col">Report</th>
+                        <th scope="col">반영일자</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">2020-10-01</th>
+                        <td><a class="ico_quodocu" href="#"></a></td>
+                        <td>2020-10-02</td>
+                      </tr>
+                      
+                      <tr>
+                        <th scope="row">2020-10-01</th>
+                        <td><a class="ico_quodocu" href="#"></a></td>
+                        <td>2020-10-02</td>
+                      </tr>
+                      
+                      <tr>
+                        <th scope="row">2020-10-01</th>
+                        <td><a class="ico_quodocu" href="#"></a></td>
+                        <td>2020-10-02</td>
+                      </tr>
+                      
+                      </tbody>
+                  </table>  
+                </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <h2 class="mt-4">수정요청</h2>
+                <div class="detail_view_re mt-1">
+                  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="blregisterdate">요청일자</label>
+                      <input type="date" class="form-control" id="blregisterdate"> 
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="blperson">요청자</label>
+                      <input type="text" class="form-control" id="blperson">
+                    </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-md-12">
+                      <label for="blFormTextarea">요청사항</label>
+                      <textarea class="form-control" id="blFormTextarea" rows="3" placeholder="수정 요청 내용을 입력하세요."></textarea>
+                    </div>
+                  </div>
+                  <hr>
+                    <div class="d-inline">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                    <span class="single list_tit pl-2">메세지 알림</span>
+                  </div>
+                  
+                    <ul class="d-inline list-inline">
+                      <li class="list-inline-item"><input type="checkbox" class="form-check-input" id="tomail">
+                        <label class="form-check-label" for="tomail">메일</label></li>
+                      <li class="list-inline-item pl-3"><input type="checkbox" class="form-check-input" id="tokakao">
+                        <label class="form-check-label" for="tokakao">카카오톡</label></li>
+                      <li class="list-inline-item pl-3"><input type="checkbox" class="form-check-input" id="tosms">
+                        <label class="form-check-label" for="tosms">문자메세지</label></li>
+                    </ul>
+                     <div class="btn_wrap mt-4">
+                       <a class="send">송신</a>
+                       <a class="cancel">취소</a>
+                     </div>
+                </div>
+              </div>
+            </div>
+                <div class="form-row">
+                  <div class="col-md-5">
+                  <h2 class="mt-4">B/L Confirm</h2>
+                <div class="detail_view_re mt-1">
+                  <div class="form-row ml-4">
+                    
+                  <input type="checkbox" class="form-check-input" id="blAgree">
+                      <label class="form-check-label" for="blAgree">B/L 내용에 이상 없음을 최종 확인 하였습니다.</label>
+                    
+
+                  </div>
+                    <hr>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="blregisterdate">확인일자</label>
+                          <input type="date" class="form-control" id="blregisterdate">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="blperson">담당자</label>
+                          <input type="text" class="form-control" id="blperson">
+                        </div>
+                      </div>
+                      <div class="btn_wrap mt-4">
+                        <a class="check">확인</a>
+                        <a class="cancel">취소</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-7">
+                <h2 class="mt-4">수정반영</h2>
+                <div class="detail_view_re mt-1">
+                  
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="blregisterdate">반영일자</label>
+                      <input type="date" class="form-control" id="blregisterdate">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="blperson">담당자</label>
+                      <input type="text" class="form-control" id="blperson">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-12">
+                      <label for="blFormTextarea">반영내용</label>
+                      <textarea class="form-control" id="blFormTextarea" rows="3" placeholder="수정 요청에 대해 반영된 내용을 입력하세요."></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="btn_wrap mt-4">
+                    <a class="send">송신</a>
+                    <a class="cancel">취소</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+            </div>
+          </div>
+      </div>
+        
+    </div>
+    <div id="sidebar-wrapper">
+        <div class="sidebar_top">
+            <a id="menu-close" href="#" class="close_toggle"></a>
+            <span class="sub_logo"><img src="./img/logotest.png"></span>
+            <ul class="menu-top">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">LOGOUT</a></li>
+            </ul>
+            <p class="menu-profile">홍길동</p>
+        </div>
+     
+
+        <div class="leftframe_mb">
+            <div class="tit sidebar-nav">
+                <p>견적/주문 서비스</p>
+            </div>
+            <ul class="sub_nav">
+                <li class="on"><a>스케줄 조회</a></li>
+                <li><a>견적 요청/승인/조회</a></li>
+                <li><a>BKG 요청/확정 조회</a></li>
+            </ul>
+        </div>
+      
+    </div>
+    <div class="sidebar-bg"></div>
+    <script>
+        $('.mg_btn').click(function(){
+            $('.total_menu').slideDown();
+        });
+        $('.total_menu').hover(function(){
+            $(this).css('display','block');
+        }, function(){
+            $(this).slideUp();
+        });
+        //다중선택
+        $(function() {
+    $('#toggle-event').change(function() {
+      $('#console-event').html('Toggle: ' + $(this).prop('checked'))
+    })
+  })
+  //사이드메뉴
+  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0",display:"none"});
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0.7",display:"block"});    
+  });
+
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#myLinks").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0",display:"none"});
+  });
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#test").toggleClass("active");
+    
+  });
+  /*
+  $(".nav_mb_tit").click(function(e) {
+    e.preventDefault();
+    $("#myLinks").toggleClass("active");
+    $(".sidebar-bg").css({opacity:"0.7",display:"block"});    
+  });}
+*/
+  
+ //모바일 타이틀 하위메뉴
+  function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    
+     
+  }
+
+}
+
+    </script>
+    <script>
+     $(function () {
+        $('#datetimepicker7').datetimepicker();
+        $('#datetimepicker8').datetimepicker({
+            useCurrent: false
+        });
+        $("#datetimepicker7").on("change.datetimepicker", function (e) {
+            $('#datetimepicker8').datetimepicker('minDate', e.date);
+        });
+        $("#datetimepicker8").on("change.datetimepicker", function (e) {
+            $('#datetimepicker7').datetimepicker('maxDate', e.date);
+        });
+    });
+</script>
+</body>
+</html>

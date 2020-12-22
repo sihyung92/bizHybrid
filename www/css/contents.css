@@ -1,0 +1,622 @@
+.con_body{
+    width:1200px
+}
+.register_body{
+    width:1000px
+}
+.register_box{
+    background:#F5F8FF;
+    border:1px solid #BCD1F1;
+    padding:2%;
+    margin:0;
+    margin-top: 25px;
+}
+.register_box label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1B2B55;
+    line-height: 19px;
+}
+
+.register_box .label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #1B2B55;
+    line-height: 19px;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.con_body h1{
+    font-size:24px;
+    color:#1f4194;
+    font-weight:bold
+}
+.con_body h2{
+    font-size: 17px;
+    color:#000000;
+    font-weight: bold;
+}
+
+.breadCrumb {
+    padding:0 ;
+    margin:0
+}
+.breadCrumb li.bc-item{
+    display:inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #636363;
+}
+
+.breadCrumb li.bc-item:last-child{
+    font-size: 22px;
+    color: #1f4194;
+    font-weight: bold;
+}
+.breadCrumb li+li:before {
+    padding: 8px;
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    content: '';
+    clear: both;
+    background: url(../img/ico_path.png) no-repeat;
+    background-position: center;
+}
+/*search box*/
+.search_box{
+    background:#F5F8FF;
+    border:1px solid #BCD1F1;
+    padding:1%;
+    margin:0;
+    margin-top: 25px;
+}
+.search_box form{
+    display:flex;
+    flex-wrap: wrap;
+}
+.search_box:after{
+	content:'';
+	clear:both;
+	display:block;
+	overflow:hidden
+}
+.search_box .inputGr{
+    flex:33%;
+    max-width: 33%;
+    padding:0 10px
+}
+
+.search_box label{
+    font-size: 15px;
+    font-weight: bold;
+    color:#1B2B55;line-height: 19px;
+}
+.search_box .btn{
+    background:#276dff;
+    color:#fff;
+    font-size:14px;
+    border-radius: 0;
+}
+.search_box .searchB{
+    float: right;
+    display: block;
+    padding: 8px 60px;
+    clear: both;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+.tsSelect{
+    display:flex;
+    flex-wrap:wrap
+}
+.dateSelect{
+    display:flex;
+    flex-wrap:wrap;
+}
+.dateDiv{
+    display:flex;
+    flex-wrap: wrap;
+}
+#datetimepicker7,
+#datetimepicker8{
+    flex: 1;
+    margin: 0 2px;
+}
+.dateSelect .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    background-color: #88a2df;
+    border-color: #3B59A1;
+    color: #ffffff;
+}
+.dateSelect .btn-secondary{
+    border-color: #ced4da;
+    background-color: #fff;
+    color:#393939;
+    height: 34px;
+    border: 1px solid #AFAFAF;
+    border-radius: 0;
+    flex: 1;
+    margin: 0px 2px;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 34px;
+    padding: 0;
+}
+.dateSelect label{
+    width:13.3%
+}
+.tsSelect .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+    background-color:#88a2df;
+    border-color: #3B59A1;
+    color:#fff;
+}
+.tsSelect .btn-secondary{
+    border-color: #ced4da;
+    background-color: #fff;
+    color:#393939;
+    height: 34px;
+    border: 1px solid #AFAFAF;
+    border-radius: 0;
+    flex: 1;
+    margin: 0px 2px;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 34px;
+    padding: 0;
+
+}
+.tsSelect label{
+    width:31.7%
+}
+.detail_view{
+    border:1px solid #CFCFCF;
+    border-top:2px solid #272727;
+    background:#fff;
+    padding:15px;
+}
+.bl_tit{
+    padding:7px 0;
+    margin-top:30px;
+    position: relative;
+}
+.bl_tit h2 {
+    font-size:18px
+}
+.bl_tit h2 .list_tit{
+    color: #7D7D7D;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.bl_tit ul.quo_list{
+    position: absolute;
+    right:0;
+    bottom:6px
+}
+ul.quo_list{
+    margin:0;
+    padding:0
+}
+ul.quo_list li{
+    display: inline-block;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 15px;
+    padding: 8px;
+    font-weight: bold;
+}
+ul.quo_list li:first-child{
+    background:#FFDBDB;
+}
+ul.quo_list li:nth-child(2){
+    background:#88FFC8;
+}
+ul.quo_list li:last-child{
+    background:#BED4FF;
+}
+.quo_list_detail{
+    display: flex;
+}
+.quo_list_detail ul{
+    
+    padding:0;
+    margin:0;
+}
+.quo_list_detail ul:first-child{
+    flex:20%;
+    max-width: 20%;
+}
+.quo_list_detail ul:nth-child(2){
+    flex:20%;
+    max-width: 20%;
+}
+.quo_list_detail ul:nth-child(3){
+    flex:30%;
+    max-width: 30%;
+}
+.quo_list_detail ul:nth-child(3) li span.list_tit {
+    flex: 25%;
+}
+.quo_list_detail ul:nth-child(4){
+    flex:15%;
+    max-width: 15%;
+}
+.quo_list_detail ul:last-child{
+    flex:15%;
+    max-width: 15%;
+}
+.quo_list_detail ul li{
+    font-size: 15px;
+    display: flex;
+}
+.quo_list_detail ul li span.list_tit{
+    flex:44%;
+    color:#7D7D7D;
+}
+.quo_list_detail ul li span.list_val{
+    flex:73%
+}
+.detail_view_re{
+    border:1px solid #CFCFCF;
+    border-top:2px solid #272727;
+    background:#fff;
+    padding:15px;
+    position: relative;
+}
+.detail_view_re .prtBtn{
+    position: absolute;
+    right: 0;
+    top: -37px;
+    background: #ff9900;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.detail_view{
+    position: relative;
+}
+.detail_view .prtBtn{
+    position: absolute;
+    right: 0;
+    top: -37px;
+    background: #ff9900;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.detail_view_re label{
+    font-weight:bold;
+    font-size:15px;
+    color:#646464
+}
+.list_view{
+    display: flex;
+}
+
+.table_view{
+    flex:50%
+}
+.shipping-select input[type="radio"] {
+    display: none;}
+    .shipping-select input[type="radio"]:not(:disabled) ~ label {
+      cursor: pointer;
+    }
+    .shipping-select input[type="radio"]:disabled ~ label {
+      color: hsla(150, 5%, 75%, 1);
+      border-color: hsla(150, 5%, 75%, 1);
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  .shipping-select label {
+    display: block;
+    background: white;
+    border: 1px solid #afafaf;
+    border-radius: 7px;
+    padding: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+  }
+  .shipping-select input[type="radio"]:checked + label {
+    background: #4d5a7c;
+    color: #ffffff;
+    border: 1px solid #4d5a7c;
+    }
+    .shipping-select input[type="radio"]:checked + label::after {      
+        color: #467eff;
+        font-family: FontAwesome;
+        border: 1px solid #4d5a7c;
+        content: "\f00c";
+        font-size: 13px;
+        position: absolute;
+        top: -10px;
+        left: 16%;
+        transform: translateX(-50%);
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        background: white;
+    }
+
+ .shipping-select input[type="radio"]#control_05:checked + label {
+    background: red;
+    border-color: red;
+  }
+
+.quo_list_detail_re ul{
+    padding:0;
+    margin:0;
+}
+.quo_list_detail_re ul li{
+    font-size: 15px;
+}
+.quo_list_detail_re ul li span.list_tit{
+    width:130px;
+    color:#7D7D7D;
+    display: inline-block;
+}
+.quo_list_detail_re ul li span.list_val{
+    display: inline-block;
+    vertical-align: top;
+    width:70%
+}
+.quo_list_detail_re2 ul{
+    padding:0;
+    margin:0;
+}
+.quo_list_detail_re2 ul li{
+    font-size: 15px;
+   
+}
+.quo_list_detail_re2 ul li span.list_tit{
+    width:130px;
+    color:#7D7D7D;
+    display: inline-block;
+    vertical-align: top
+}
+ul.contact_li li a{
+    color: #787878;
+    vertical-align: middle;
+    line-height: 25px;
+}
+ul.contact_li li a:after {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: '';
+    background: url(../img/ico_ar.png) no-repeat;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+ul.contact_li li.call a:after{
+    background-position: 0px 0px;
+}
+ul.contact_li li.sms a:after{
+    background-position: -29px 0px;
+}
+ul.contact_li li.mail a:after{
+    background-position: -58px 0px;
+}
+.single.list_tit{
+    width:130px;
+    color:#7D7D7D;
+    display: inline-block;
+    font-size:15px
+}
+.quo_list_detail_re2 ul li span.list_val{
+    display: inline-block;
+    width:85%;
+    vertical-align: top;
+}
+.detail_view_re2{
+    border:1px solid #CFCFCF;
+    border-top:2px solid #272727;
+    background:#fff;
+    display: flex;
+    padding:15px
+}
+.detail_view_re2 ul.check_list{
+    flex:50%;
+    padding-left:0px
+}
+.detail_view_re2 .agree-form{
+    flex:70%;
+}
+.selectRadio .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.selectRadio .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+@media (max-width:1200px){
+    .search_box{
+        padding:10px
+    }
+    
+    .search_box .searchB{
+        width:100%;
+        float:none;
+        margin-top:20px
+    }
+    .search_box .inputGr{
+        flex:50%;
+        max-width:50%;
+    }
+    .register_box{
+        padding:10px
+    }
+    .register_box .btn{
+        width:100%;
+        float:none;
+        margin-top:20px
+    }
+    
+    .table_view{
+        margin-top:10px
+    }
+    
+}
+@media (max-width:1024px){
+   .con_body{
+        width:100%;
+    }
+    .con_body h1{
+        font-size:19px
+    }
+    .register_body{
+        width:100%
+    }
+}
+@media (max-width:768px){
+    .detail_view_re2{
+        display: block;
+    }
+    .quo_list_detail_re ul li span.list_tit{
+        width:30%
+    }
+    .quo_list_detail_re ul li span.list_val{
+        width:70%
+    }
+    .quo_list_detail_re2 ul li span.list_tit{
+        width:30%
+    }
+    .quo_list_detail_re2 ul li span.list_val{
+        width:70%
+    }
+    /*견적 테이블 반응형*/
+    .responsive_quotable, 
+    .responsive_quotable thead, 
+    .responsive_quotable tbody, 
+    .responsive_quotable th, 
+    .responsive_quotable td, 
+    .responsive_quotable tr {
+			display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.responsive_quotable thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    .responsive_quotable tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    .responsive_quotable tr:nth-child(odd) {
+      background: #fff;
+    }
+    
+	.responsive_quotable th{
+		background:#fff
+    }
+    .responsive_quotable tbody tr th[scope="row"]{
+        padding:5px;
+        text-align: left;
+        font-weight: bold;
+        border-top:none
+    }
+	.responsive_quotable td {
+		/* Behave  like a "row" */
+		background: #fff;
+		position: relative;
+		padding-left: 45%;
+		text-align: left;
+	}
+
+	.responsive_quotable td:before {
+		position: absolute;
+        top: 0;
+        left: 0px;
+        width: 40%;
+        padding-right: 3px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        background: #efefef;
+        display: block;
+        height: 34px;
+        border-right: 1px solid #dee2e6;
+        padding: 0px 20px;
+        vertical-align: middle;
+        line-height: 32px;
+    }
+    .responsive_quotable td span.checked_clr,
+    .responsive_quotable a.ico_quodocu{
+        margin:0;
+        background-position:left
+    }
+    .responsive_quotable td.quo_none{
+        display:none
+    }
+    .responsive_quotable td.quo_position{
+
+    }
+    .responsive_quotable td.quo_position::after{
+        content:"견적서"
+    }
+		/*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+	table.responsive_quotable td:nth-of-type(1):before {content: "업무";}
+    table.responsive_quotable td:nth-of-type(2):before { content: "I/O"; }
+    table.responsive_quotable td:nth-of-type(3):before { content: "화물적재"; }
+    table.responsive_quotable td:nth-of-type(4):before { content: "출발지"; }
+    table.responsive_quotable td:nth-of-type(5):before { content: "도착지"; }
+    table.responsive_quotable td:nth-of-type(6):before { content: "아이템"; }
+    table.responsive_quotable td:nth-of-type(7):before { content: "PKG"; }
+    table.responsive_quotable td:nth-of-type(8):before { content: "W/T"; }
+    table.responsive_quotable td:nth-of-type(9):before { content: "CBM"; }
+    table.responsive_quotable td:nth-of-type(10):before { content: "회신일자"; }
+    table.responsive_quotable td:nth-of-type(11):before { content: "견적서"; }
+    table.responsive_quotable td:nth-of-type(12):before { content: "회신담당"; }
+    table.responsive_quotable td:nth-of-type(13):before { content: "확정일자"; }
+    table.responsive_quotable td:nth-of-type(14):before { content: "확정자"; }
+    table.responsive_quotable td:nth-of-type(15):before { content: "동의"; }
+    table.responsive_quotable td:nth-of-type(16):before { content: "계약"; }
+    table.responsive_quotable td:nth-of-type(17):before { content: "BKG"; }
+	}
+}
+@media (max-width:540px){
+    .search_box .inputGr{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width:425px){
+    .time_tbl{
+        padding-left:5px;    }
+    .detail_view_re2{
+        display: block;
+    }
+    .quo_list_detail_re ul li span.list_tit{
+        width:100%
+    }
+    .quo_list_detail_re ul li span.list_val{
+        width:100%;
+        padding-left: 5px;
+    }
+    .quo_list_detail_re2 ul li span.list_tit{
+        width:100%
+    }
+    .quo_list_detail_re2 ul li span.list_val{
+        width:100%;
+        padding-left:5px
+    }
+}
+    

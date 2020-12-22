@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>http://siteweb.co.kr/</title>
+    <script language="javascript">
+        /**
+         * by 행복한고니 (20041008)
+         *
+         * Homepage : http://siteweb.co.kr/
+         */
+        function slide(Id, interval, to) {
+            var obj = document.getElementById(Id);
+            var H, step = 5;
+            if (obj == null) return;
+            if (to == undefined) { // user clicking
+                if (obj._slideStart == true) return;
+                if (obj._expand == true) {
+                    to = 0;
+                    obj.style.overflow = "hidden";
+                } else {
+                    slide.addId(Id);
+                    for (var i = 0; i < slide.objects.length; i++) {
+                        if (slide.objects[i].id != Id && slide.objects[i]._expand == true) {
+                            slide(slide.objects[i].id);
+                        }
+                    }
+                    obj.style.height = "";
+                    obj.style.overflow = "";
+                    obj.style.display = "block";
+                    to = obj.offsetHeight; // 이거이거
+                    obj.style.overflow = "hidden";
+                    obj.style.height = "1px";
+                }
+                obj._slideStart = true;
+            }
+
+            step = ((to > 0) ? 1 : -1) * step;
+            interval = ((interval == undefined) ? 1 : interval);
+            obj.style.height = (H = ((H = (isNaN(H = parseInt(obj.style.height)) ? 0 : H)) + step < 0) ? 0 : H + step) +
+                "px";
+
+
+            if (H <= 0) {
+                obj.style.display = "none";
+                obj.style.overflow = "hidden";
+                obj._expand = false;
+                obj._slideStart = false;
+            } else if (to > 0 && H >= to) {
+                obj.style.display = "block";
+                obj.style.overflow = "visible";
+                obj.style.height = H + "px";
+                obj._expand = true;
+                obj._slideStart = false;
+            } else {
+                setTimeout("slide('" + Id + "' , " + interval + ", " + to + ");", interval);
+            }
+        }
+        slide.objects = new Array();
+        slide.addId = function (Id) {
+            for (var i = 0; i < slide.objects.length; i++) {
+                if (slide.objects[i].id == Id) return true;
+            }
+            slide.objects[slide.objects.length] = document.getElementById(Id);
+        }
+    </script>
+    <style>
+        .menu {
+            border: 1px solid #999999;
+            background-color: #FFCC00;
+            padding: 3px 1px 1px 5px;
+            cursor: hand;
+            width: 150px;
+        }
+
+        .submenu {
+            width: 150px;
+            padding-left: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu" onClick="slide('sub1');">메뉴항목 1</div>
+    <div id="sub1" class="submenu">
+        <div>- Sub menu 1-1</div>
+        <div>- Sub menu 1-2</div>
+        <div>- Sub menu 1-3</div>
+        <div>- Sub menu 1-4</div>
+        <div>- Sub menu 1-5</div>
+    </div>
+    <div class="menu" onClick="slide('sub2');">메뉴항목 2</div>
+    <div id="sub2" class="submenu">
+        <div>- Sub menu 2-1</div>
+        <div>- Sub menu 2-2</div>
+        <div>- Sub menu 2-3</div>
+        <div>- Sub menu 2-4</div>
+        <div>- Sub menu 2-5</div>
+        <div>- Sub menu 2-6</div>
+        <div>- Sub menu 2-7</div>
+        <div>- Sub menu 2-8</div>
+    </div>
+    <div class="menu" onClick="slide('sub3');">메뉴항목 3</div>
+    <div id="sub3" class="submenu">
+        <div>- Sub menu 3-1</div>
+        <div>- Sub menu 3-2</div>
+        <div>- Sub menu 3-3</div>
+    </div>
+    <div class="menu" onClick="slide('sub4');">메뉴항목 4</div>
+    <div id="sub4" class="submenu">
+        <div>- Sub menu 4-1</div>
+        <div>- Sub menu 4-2</div>
+        <div>- Sub menu 4-3</div>
+    </div>
+    <div class="menu" onClick="slide('sub5');">메뉴항목 5</div>
+    <div id="sub5" class="submenu">
+        <div>- Sub menu 5-1</div>
+        <div>- Sub menu 5-2</div>
+        <div>- Sub menu 5-3</div>
+        <div>- Sub menu 5-4</div>
+    </div>
+</body>
+
+</html>
